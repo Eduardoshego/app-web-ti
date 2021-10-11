@@ -1,7 +1,39 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { HomeComponent } from './views/home/home.component';
+import { ComputerCrudComponent } from './views/computer-crud/computer-crud.component';
+import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
+import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
+import { EstoqueCrudComponent } from './views/estoque-crud/estoque-crud.component';
+import { SwitchsCrudComponent} from './views/switchs-crud/switchs-crud.component'
+
+const routes: Routes = [
+  {
+  path: "",
+  component: HomeComponent
+  },
+  {
+    path:'computers',
+    component:ComputerCrudComponent
+  },
+  {
+    path:"prints",
+    component:PrintsCrudComponent
+  },
+  {
+    path:"setores",
+    component: SetoresCrudComponent
+  },
+  {
+    path:"estoque",
+    component:EstoqueCrudComponent
+  },
+  {
+    path:"switchs",
+    component:SwitchsCrudComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
