@@ -1,0 +1,14 @@
+
+  .side-nav{
+    background-color:black;
+    width: 200px;
+    
+  }
+  .side-nav a{
+      color: #Fc9850;
+  }
+
+  .side-nav i{
+      padding-right: 10px;
+  }
+  

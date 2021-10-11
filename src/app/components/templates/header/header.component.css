@@ -1,0 +1,25 @@
+.header{
+    display:flex;
+    align-items: center;
+    background-color:black;
+    color: beige;
+
+}
+.header a{
+    display: flex;
+    align-items: center;
+    /* remover a decoração dos links */
+    text-decoration: none;
+    
+}
+.header .logo{
+    /* colocando a logo dentro do header */
+    max-height: 60px;
+    background-color: rgb(0,0,0) transparent;
+}
+.header .title-group{
+    padding-left: 20px;
+}
+.header .title-group i{
+    padding-right: 10px;
+}
