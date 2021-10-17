@@ -6,7 +6,8 @@ import { ComputerCrudComponent } from './views/computer-crud/computer-crud.compo
 import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
 import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
 import { EstoqueCrudComponent } from './views/estoque-crud/estoque-crud.component';
-import { SwitchsCrudComponent} from './views/switchs-crud/switchs-crud.component'
+import { SwitchsCrudComponent} from './views/switchs-crud/switchs-crud.component';
+import {EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:"switchs",
     component:SwitchsCrudComponent
+  },
+  {
+    path:"estoque/created",
+    component:EstoqueCreatedComponent
   }
 ];
 

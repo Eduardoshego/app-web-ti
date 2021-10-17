@@ -13,12 +13,14 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import{ MatCardModule} from '@angular/material/card';
+import{MatButtonModule} from '@angular/material/button'
 
 import { ComputerCrudComponent } from './views/computer-crud/computer-crud.component';
 import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
 import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
 import { EstoqueCrudComponent } from './views/estoque-crud/estoque-crud.component';
-import { SwitchsCrudComponent } from './views/switchs-crud/switchs-crud.component'
+import { SwitchsCrudComponent } from './views/switchs-crud/switchs-crud.component';
+import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { SwitchsCrudComponent } from './views/switchs-crud/switchs-crud.componen
     PrintsCrudComponent,
     SetoresCrudComponent,
     EstoqueCrudComponent,
-    SwitchsCrudComponent
+    SwitchsCrudComponent,
+    EstoqueCreatedComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { SwitchsCrudComponent } from './views/switchs-crud/switchs-crud.componen
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
