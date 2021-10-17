@@ -5,22 +5,34 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import{MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './components/templates/header/header.component';
 import { FooterComponent } from './components/templates/footer/footer.component';
 import { NavComponent } from './components/templates/nav/nav.component';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
-import{ MatCardModule} from '@angular/material/card';
-import{MatButtonModule} from '@angular/material/button'
+import { MatCardModule} from '@angular/material/card';
+import { MatButtonModule} from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input'
+
+
 
 import { ComputerCrudComponent } from './views/computer-crud/computer-crud.component';
 import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
 import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
 import { EstoqueCrudComponent } from './views/estoque-crud/estoque-crud.component';
 import { SwitchsCrudComponent } from './views/switchs-crud/switchs-crud.component';
-import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component'
+import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
+import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
+import { ProdutoCreateComponent} from './components/produtos/produto-create/produto-create.component';
+import { ProdutoReadComponent } from './components/produtos/produto-read/produto-read.component';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +46,14 @@ import { EstoqueCreatedComponent } from './components/estoque/estoque-created/es
     SetoresCrudComponent,
     EstoqueCrudComponent,
     SwitchsCrudComponent,
-    EstoqueCreatedComponent
+    ProdutoCrudComponent,
+    EstoqueCreatedComponent,
+    ProdutoCreateComponent,
+    ProdutoReadComponent,
+    
+    
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -44,7 +63,12 @@ import { EstoqueCreatedComponent } from './components/estoque/estoque-created/es
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

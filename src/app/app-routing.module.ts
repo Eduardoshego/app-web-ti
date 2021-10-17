@@ -7,7 +7,9 @@ import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
 import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
 import { EstoqueCrudComponent } from './views/estoque-crud/estoque-crud.component';
 import { SwitchsCrudComponent} from './views/switchs-crud/switchs-crud.component';
+import {ProdutoCrudComponent} from './views/produto-crud/produto-crud.component';
 import {EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
+import {ProdutoCreateComponent} from './components/produtos/produto-create/produto-create.component';
 
 const routes: Routes = [
   {
@@ -27,8 +29,8 @@ const routes: Routes = [
     component: SetoresCrudComponent
   },
   {
-    path:"estoque",
-    component:EstoqueCrudComponent
+    path:"produtos",
+    component:ProdutoCrudComponent
   },
   {
     path:"switchs",
@@ -37,6 +39,10 @@ const routes: Routes = [
   {
     path:"estoque/created",
     component:EstoqueCreatedComponent
+  },
+  {
+    path:"produto/created",
+    component:ProdutoCreateComponent
   }
 ];
 

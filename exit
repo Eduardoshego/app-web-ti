@@ -1,0 +1,118 @@
+[33mcommit f6e8e7db2255c4620040e9917d58ad7b9c9c0600[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Eduardshego <eduarodshego1@gmail.com>
+Date:   Sun Oct 17 08:03:33 2021 -0300
+
+    criando o service de produtos
+
+ src/app/app-routing.module.ts                                                |  7 [32m++++++[m[31m-[m
+ src/app/app.module.ts                                                        | 10 [32m+++++++[m[31m---[m
+ src/app/components/estoque/estoque-created/estoque-created.component.css     |  0
+ src/app/components/estoque/estoque-created/estoque-created.component.html    |  1 [32m+[m
+ src/app/components/estoque/estoque-created/estoque-created.component.spec.ts | 25 [32m+++++++++++++++++++++++++[m
+ src/app/components/estoque/estoque-created/estoque-created.component.ts      | 16 [32m++++++++++++++++[m
+ src/app/components/estoque/estoque.model.ts                                  |  5 [32m+++++[m
+ src/app/components/templates/header/header.component.html                    |  4 [32m++[m[31m--[m
+ src/app/views/estoque-crud/estoque-crud.component.html                       |  4 [32m+++[m[31m-[m
+ src/app/views/estoque-crud/estoque-crud.component.ts                         |  7 [32m++++++[m[31m-[m
+ 10 files changed, 71 insertions(+), 8 deletions(-)
+
+[33mcommit 1d62dc52a6087b40d0a249bcdd1b717e9599d6d1[m
+Author: Eduardshego <eduarodshego1@gmail.com>
+Date:   Mon Oct 11 18:29:28 2021 -0300
+
+    criando as views do projeto
+
+ src/app/app-routing.module.ts                               | 34 [32m+++++++++++++++++++++++++++++++++[m[31m-[m
+ src/app/app.module.ts                                       | 19 [32m+++++++++++++++++[m[31m--[m
+ src/app/components/templates/footer/footer.component.css    |  2 [32m+[m[31m-[m
+ src/app/components/templates/header/header.component.css    |  2 [32m+[m[31m-[m
+ src/app/components/templates/nav/nav.component.css          |  8 [32m++++++[m[31m--[m
+ src/app/components/templates/nav/nav.component.html         | 14 [32m+++++++++[m[31m-----[m
+ src/app/views/computer-crud/computer-crud.component.css     |  0
+ src/app/views/computer-crud/computer-crud.component.html    |  1 [32m+[m
+ src/app/views/computer-crud/computer-crud.component.spec.ts | 25 [32m+++++++++++++++++++++++++[m
+ src/app/views/computer-crud/computer-crud.component.ts      | 15 [32m+++++++++++++++[m
+ src/app/views/estoque-crud/estoque-crud.component.css       |  0
+ src/app/views/estoque-crud/estoque-crud.component.html      |  1 [32m+[m
+ src/app/views/estoque-crud/estoque-crud.component.spec.ts   | 25 [32m+++++++++++++++++++++++++[m
+ src/app/views/estoque-crud/estoque-crud.component.ts        | 15 [32m+++++++++++++++[m
+ src/app/views/home/home.component.css                       | 10 [32m++++++++++[m
+ src/app/views/home/home.component.html                      |  8 [32m++++++++[m
+ src/app/views/home/home.component.spec.ts                   | 25 [32m+++++++++++++++++++++++++[m
+ src/app/views/home/home.component.ts                        | 15 [32m+++++++++++++++[m
+ src/app/views/prints-crud/prints-crud.component.css         |  0
+ src/app/views/prints-crud/prints-crud.component.html        |  1 [32m+[m
+ src/app/views/prints-crud/prints-crud.component.spec.ts     | 25 [32m+++++++++++++++++++++++++[m
+ src/app/views/prints-crud/prints-crud.component.ts          | 15 [32m+++++++++++++++[m
+ src/app/views/setores-crud/setores-crud.component.css       |  0
+ src/app/views/setores-crud/setores-crud.component.html      |  1 [32m+[m
+ src/app/views/setores-crud/setores-crud.component.spec.ts   | 25 [32m+++++++++++++++++++++++++[m
+ src/app/views/setores-crud/setores-crud.component.ts        | 15 [32m+++++++++++++++[m
+ src/app/views/switchs-crud/switchs-crud.component.css       |  0
+ src/app/views/switchs-crud/switchs-crud.component.html      |  1 [32m+[m
+ src/app/views/switchs-crud/switchs-crud.component.spec.ts   | 25 [32m+++++++++++++++++++++++++[m
+ src/app/views/switchs-crud/switchs-crud.component.ts        | 15 [32m+++++++++++++++[m
+ 30 files changed, 330 insertions(+), 12 deletions(-)
+
+[33mcommit 64ec8b7c6601908029176055158a3245d3fdbc48[m
+Author: Eduardshego <eduarodshego1@gmail.com>
+Date:   Mon Oct 11 08:51:45 2021 -0300
+
+    Subindo o projeto
+
+ angular.json                                                 |   5 [32m+[m
+ package-lock.json                                            |  25 [32m+++[m
+ package.json                                                 |   2 [32m+[m
+ src/app/app.component.html                                   | 504 [32m+[m[31m---------------------------------------------------------[m
+ src/app/app.module.ts                                        |  19 [32m++[m[31m-[m
+ src/app/components/templates/footer/footer.component.css     |  15 [32m++[m
+ src/app/components/templates/footer/footer.component.html    |   8 [32m+[m
+ src/app/components/templates/footer/footer.component.spec.ts |  25 [32m+++[m
+ src/app/components/templates/footer/footer.component.ts      |  15 [32m++[m
+ src/app/components/templates/header/header.component.css     |  25 [32m+++[m
+ src/app/components/templates/header/header.component.html    |  17 [32m++[m
+ src/app/components/templates/header/header.component.spec.ts |  25 [32m+++[m
+ src/app/components/templates/header/header.component.ts      |  15 [32m++[m
+ src/app/components/templates/nav/nav.component.css           |  14 [32m++[m
+ src/app/components/templates/nav/nav.component.html          |  27 [32m++++[m
+ src/app/components/templates/nav/nav.component.spec.ts       |  25 [32m+++[m
+ src/app/components/templates/nav/nav.component.ts            |  15 [32m++[m
+ src/assets/img/logo.png                                      | Bin [31m0[m -> [32m7110[m bytes
+ src/assets/img/logo2.png                                     | Bin [31m0[m -> [32m13340[m bytes
+ src/index.html                                               |   7 [32m+[m[31m-[m
+ src/styles.css                                               |   3 [32m+[m
+ 21 files changed, 286 insertions(+), 505 deletions(-)
+
+[33mcommit f84f4c19cba7ebb118e80726e8e914991f634a7c[m
+Author: Eduardshego <eduarodshego1@gmail.com>
+Date:   Sun Oct 10 14:39:18 2021 -0300
+
+    initial commit
+
+ .browserslistrc                      |    17 [32m+[m
+ .editorconfig                        |    16 [32m+[m
+ .gitignore                           |    45 [32m+[m
+ README.md                            |    27 [32m+[m
+ angular.json                         |   106 [32m+[m
+ karma.conf.js                        |    44 [32m+[m
+ package-lock.json                    | 11899 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ package.json                         |    39 [32m+[m
+ src/app/app-routing.module.ts        |    10 [32m+[m
+ src/app/app.component.css            |     0
+ src/app/app.component.html           |   501 [32m++++[m
+ src/app/app.component.spec.ts        |    35 [32m+[m
+ src/app/app.component.ts             |    10 [32m+[m
+ src/app/app.module.ts                |    18 [32m+[m
+ src/assets/.gitkeep                  |     0
+ src/environments/environment.prod.ts |     3 [32m+[m
+ src/environments/environment.ts      |    16 [32m+[m
+ src/favicon.ico                      |   Bin [31m0[m -> [32m948[m bytes
+ src/index.html                       |    13 [32m+[m
+ src/main.ts                          |    12 [32m+[m
+ src/polyfills.ts                     |    65 [32m+[m
+ src/styles.css                       |     1 [32m+[m
+ src/test.ts                          |    27 [32m+[m
+ tsconfig.app.json                    |    15 [32m+[m
+ tsconfig.json                        |    30 [32m+[m
+ tsconfig.spec.json                   |    18 [32m+[m
+ 26 files changed, 12967 insertions(+)

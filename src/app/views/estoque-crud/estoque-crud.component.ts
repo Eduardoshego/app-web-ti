@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{ Router } from '@angular/router'
+
 
 @Component({
   selector: 'app-estoque-crud',
@@ -8,13 +8,11 @@ import{ Router } from '@angular/router'
 })
 export class EstoqueCrudComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  navigateEstoqueCreated(): void{
-    this.router.navigate(['/estoque/created'])
-  }
+ 
 
 }
