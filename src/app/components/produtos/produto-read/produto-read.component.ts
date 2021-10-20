@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProdutoReadComponent implements OnInit {
 
   produtos!: Produto[]
+  displayedColumns = ['id','descricao','quantidade','action']
 
 
   constructor(private produtoService : ProdutoService) { }
@@ -20,5 +21,6 @@ export class ProdutoReadComponent implements OnInit {
       console.log(produtos)
     })
   }
+
 
 }

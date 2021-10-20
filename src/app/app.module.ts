@@ -31,6 +31,14 @@ import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.componen
 import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
 import { ProdutoCreateComponent} from './components/produtos/produto-create/produto-create.component';
 import { ProdutoReadComponent } from './components/produtos/produto-read/produto-read.component';
+import { MatTreeModule } from '@angular/material/tree';
+import { MatIconModule } from '@angular/material/icon';
+// import { ProdutoRead2Component } from './components/produtos/produto-read2/produto-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { ProdutoUpdateComponent } from './components/produtos/produto-update/produto-update.component';
+import { ProdutoDeleteComponent } from './components/produtos/produto-delete/produto-delete.component';
 
 
 
@@ -50,6 +58,10 @@ import { ProdutoReadComponent } from './components/produtos/produto-read/produto
     EstoqueCreatedComponent,
     ProdutoCreateComponent,
     ProdutoReadComponent,
+    ProdutoUpdateComponent,
+    ProdutoDeleteComponent,
+    // ProdutoRead2Component,
+    
     
     
     
@@ -68,7 +80,12 @@ import { ProdutoReadComponent } from './components/produtos/produto-read/produto
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatTreeModule,
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
