@@ -1,0 +1,14 @@
+button{
+    margin:20px 10px 0px 0px;
+    width: 100px;
+}
+i{
+    text-align: end;
+    
+}
+.form{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+}

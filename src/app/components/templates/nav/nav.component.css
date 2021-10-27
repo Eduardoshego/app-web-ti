@@ -13,6 +13,12 @@
   }
   .content{
     padding: 16px;
+    /* background-color: #222222; */
+  }
+  .container{
+    background-color: #adadad;
+    height: 80%;
+  }
+  mat-form-field{
     background-color: beige;
   }
-  

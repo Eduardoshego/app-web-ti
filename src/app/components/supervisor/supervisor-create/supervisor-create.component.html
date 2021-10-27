@@ -1,0 +1,26 @@
+<mat-card class="mat-card">
+    <mat-card-title>Novo Cadastro</mat-card-title>
+    <mat-divider></mat-divider>
+    <form >
+        
+        <mat-form-field appearance="outline" >
+            <mat-label>Nome</mat-label>
+           <input matInput type="text" required> 
+           <mat-icon matPrefix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="email" required>
+            <mat-icon matPrefix>contact_mail</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" >
+            <mat-label>Telefone</mat-label>
+            <input matInput type="text" required>
+            <mat-icon matPrefix>contact_phone</mat-icon>
+        </mat-form-field>
+    </form>
+    <mat-divider></mat-divider>
+    <button mat-raised-button color="primary"><mat-icon>save</mat-icon></button>
+    <button mat-raised-button color="warn">Cancelar</button>
+</mat-card>
+

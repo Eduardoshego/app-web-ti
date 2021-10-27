@@ -1,0 +1,30 @@
+form{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+   
+    
+}
+.mat-card{
+    margin: 2% 25% 0% 25%;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    /* background-color: #a8a2a2; */
+    
+   
+    
+}
+mat-card-title{
+    text-align: center;
+    
+}
+
+button{
+    margin: 2% 0% 0% 2%;
+    width: 100px;
+
+}
+

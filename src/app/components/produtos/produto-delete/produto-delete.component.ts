@@ -33,7 +33,7 @@ export class ProdutoDeleteComponent implements OnInit {
     })
   }
   cancel():void{
-    this.router.navigate(["/produtos"])
+    this.router.navigate(["/produtos"]);
   }
 
 }

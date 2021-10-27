@@ -1,16 +1,26 @@
 <mat-card>
     <mat-card-title class="title">Novo Produto</mat-card-title>
+    <mat-divider></mat-divider>
     <form>
-        <mat-form-field>
-            <input matInput placeholder = "Descrição" 
-            [(ngModel)] = "produto.descricao" name = "descricao" >
+        <mat-form-field appearance="outline">
+            <mat-label>Descrição</mat-label>
+            <input matInput 
+            [(ngModel)] = "produto.descricao" name = "descricao" required >
+            <mat-icon matPrefix>description</mat-icon>
         </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder = "Quantidade" 
+        <mat-form-field class="quant" appearance = "outline">
+            <mat-label>Quantidade</mat-label>
+            <input matInput type="number" 
             [(ngModel)]= "produto.quantidade" name = "quantidade">
         </mat-form-field>
     </form>
-    <button mat-raised-button  color="primary"(click)= "createdProduto()">Salvar</button>
-    <button mat-raised-button (click)="navigateToProduto()">Cancelar</button>
+    <mat-divider></mat-divider>
+    <button mat-raised-button  color="primary"(click)= "createdProduto()">
+        <mat-icon>save</mat-icon>
+        Salvar</button>  
+    <button mat-raised-button color="warn" (click)="navigateToProduto()">
+        <mat-icon>cancel</mat-icon>
+        Cancelar
+    </button>
 </mat-card>
 

@@ -10,6 +10,8 @@ import {Produto} from '../Produto.model'
 })
 export class ProdutoUpdateComponent implements OnInit {
 
+  value = 'Clear me';
+
   produto!: Produto
 
   constructor(

@@ -2,15 +2,32 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
 form{
     display: flex;
     flex-direction: column;
     
 }
-button{
-    margin:20px 10px 0px 0px;
+.button{
+    margin-top: 20px;
+    width: 15%;
 }
 
 .title{
     text-align: center;
+}
+table{
+    width: 100%;
+}
+.edit{
+    margin-right: 10px;
+}
+.edit > i{
+    color:#d9cd26;
+
+}
+.delete > i{
+    color: #e35e6b;
+    
 }
