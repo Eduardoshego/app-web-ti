@@ -1,12 +1,22 @@
 form{
     display: flex;
-    flex-direction: column;
     margin: 30px;
     
 }
 button{
     margin:20px 10px 0px 0px;
     width: 130px;
+}
+.mat-card{
+    margin: 2% 25% 0% 25%;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    /* background-color: #a8a2a2; */
+    
+   
+    
 }
 
 .title{

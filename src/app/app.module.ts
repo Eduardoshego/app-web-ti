@@ -45,9 +45,9 @@ import { ProdutoUpdateComponent } from './components/produtos/produto-update/pro
 import { ProdutoDeleteComponent } from './components/produtos/produto-delete/produto-delete.component';
 
 // Componentes referente ao CRUD de Pessoas
-import { SupervisorCrudComponent } from './views/supervisor-crud/supervisor-crud.component';
-import { SupervisorCreateComponent } from './components/supervisor/supervisor-create/supervisor-create.component';
-import { SupervisorReadComponent } from './components/supervisor/supervisor-read/supervisor-read.component';
+import { CadastroCrudComponent } from './views/cadastroPessoas-crud/cadastro-crud.component';
+import { CadastroCreateComponent } from './components/cadastros/cadastro-create/cadastro-create';
+import { CadastroReadComponent } from './components/cadastros/cadastro-read/cadastro-read.component';
 
 
 
@@ -82,9 +82,9 @@ import { SetoresReadComponent } from './components/setores/setores-read/setores-
     ProdutoUpdateComponent,
     ProdutoDeleteComponent,
     SetoresReadComponent,
-    SupervisorCrudComponent,
-    SupervisorReadComponent,
-    SupervisorCreateComponent,
+    CadastroCrudComponent,
+    CadastroReadComponent,
+    CadastroCreateComponent,
     
     
 

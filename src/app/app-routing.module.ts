@@ -1,4 +1,4 @@
-import { SupervisorCreateComponent } from './components/supervisor/supervisor-create/supervisor-create.component';
+import { CadastroCreateComponent } from './components/cadastros/cadastro-create/cadastro-create';
 import { ProdutoDeleteComponent } from './components/produtos/produto-delete/produto-delete.component';
 import { ProdutoUpdateComponent } from './components/produtos/produto-update/produto-update.component';
 import { NgModule } from '@angular/core';
@@ -13,7 +13,7 @@ import { SwitchsCrudComponent} from './views/switchs-crud/switchs-crud.component
 import { ProdutoCrudComponent} from './views/produto-crud/produto-crud.component';
 import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
 import { ProdutoCreateComponent} from './components/produtos/produto-create/produto-create.component';
-import { SupervisorCrudComponent } from './views/supervisor-crud/supervisor-crud.component'
+import { CadastroCrudComponent } from './views/cadastroPessoas-crud/cadastro-crud.component';
 
 const routes: Routes = [
   {
@@ -37,12 +37,12 @@ const routes: Routes = [
     component:SwitchsCrudComponent
   },
   {
-    path:"pessoas",
-    component:SupervisorCrudComponent
+    path:"cadastro",
+    component:CadastroCrudComponent
   },
   {
-    path:"pessoas/created",
-    component:SupervisorCreateComponent
+    path:"cadastro/created",
+    component:CadastroCreateComponent
   },
   {
     path:"estoque/created",
@@ -65,10 +65,10 @@ const routes: Routes = [
     component:ProdutoDeleteComponent
 
   },
-  {
-    path:"supervisor/create",
-    component:SupervisorCreateComponent
-  }
+  // {
+  //   path:"cadastro",
+  //   component:CadastroCrudComponent
+  // }
 ];
 
 @NgModule({
