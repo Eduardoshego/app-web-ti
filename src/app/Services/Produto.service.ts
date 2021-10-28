@@ -1,9 +1,9 @@
-import { Produto } from './Produto.model';
+import { Produto } from '../model/Produto.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar} from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
-import { environment } from '../../../environments/environment' 
+import { environment } from '../../environments/environment' 
 
 @Injectable({
   providedIn: 'root'

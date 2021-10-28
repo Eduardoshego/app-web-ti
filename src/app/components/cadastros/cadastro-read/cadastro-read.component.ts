@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CadastroService } from '../Cadastro.service'
-import { Cadastro } from '../Cadastro.model';
+import { CadastroService } from '../../../Services/Cadastro.service'
+import { Cadastro } from '../../../model/Cadastro.model';
 import { environment } from '../../../../environments/environment'
 
 @Component({

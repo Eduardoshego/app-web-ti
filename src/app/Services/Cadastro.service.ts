@@ -1,10 +1,10 @@
 
-import { Cadastro } from './Cadastro.model';
+import { Cadastro } from '../model/Cadastro.model';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { HttpClient } from '@angular/common/http';
-import {environment} from '../../../environments/environment'
+import {environment} from '../../environments/environment'
 
 @Injectable({
   providedIn: 'root'
