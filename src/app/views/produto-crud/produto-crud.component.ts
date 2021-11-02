@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { HeaderService } from 'src/app/services/header.service';
 
 @Component({
   selector: 'app-produto-crud',
@@ -8,7 +9,13 @@ import {Router} from '@angular/router';
 })
 export class ProdutoCrudComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private headerService: HeaderService) {
+    headerService.headerData = {
+      title:  'Estoque',
+      icone: 'inventory',
+      url: '/produtos'
+    }
+   }
 
   ngOnInit(): void {
   }

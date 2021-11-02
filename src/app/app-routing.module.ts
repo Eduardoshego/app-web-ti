@@ -8,7 +8,6 @@ import { HomeComponent } from './views/home/home.component';
 import { ComputerCrudComponent } from './views/computer-crud/computer-crud.component';
 import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
 import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
-import { EstoqueCrudComponent } from './views/estoque-crud/estoque-crud.component';
 import { SwitchsCrudComponent} from './views/switchs-crud/switchs-crud.component';
 import { ProdutoCrudComponent} from './views/produto-crud/produto-crud.component';
 import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';

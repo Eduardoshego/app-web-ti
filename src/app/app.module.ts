@@ -35,7 +35,6 @@ import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.componen
 import { ComputerCrudComponent } from './views/computer-crud/computer-crud.component';
 import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
 import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
-import { EstoqueCrudComponent } from './views/estoque-crud/estoque-crud.component';
 import { SwitchsCrudComponent } from './views/switchs-crud/switchs-crud.component';
 
 // Componentes referente ao CRUD de Produtos.
@@ -73,7 +72,6 @@ import { SetoresReadComponent } from './components/setores/setores-read/setores-
     ComputerCrudComponent,
     PrintsCrudComponent,
     SetoresCrudComponent,
-    EstoqueCrudComponent,
     SwitchsCrudComponent,
     ProdutoCrudComponent,
     EstoqueCreatedComponent,

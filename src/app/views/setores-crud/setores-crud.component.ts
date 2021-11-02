@@ -1,3 +1,4 @@
+import { HeaderService } from './../../services/header.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetoresCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private header:HeaderService) {
+    header.headerData={
+      title:'Setores',
+      icone:'business',
+      url:'/setores'
+    }
+   }
 
   ngOnInit(): void {
   }

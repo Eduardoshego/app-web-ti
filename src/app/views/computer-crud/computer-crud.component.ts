@@ -1,3 +1,4 @@
+import { HeaderService } from './../../services/header.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComputerCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private header : HeaderService) {
+    this.header.headerData={
+      title:'Computadores',
+      icone:'computer',
+      url:'/computers'
+    }
+   }
 
   ngOnInit(): void {
   }

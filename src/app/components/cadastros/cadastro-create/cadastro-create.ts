@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CadastroService } from '../../../Services/Cadastro.service';
+import { CadastroService } from '../../../services/Cadastro.service';
 import { Cadastro } from '../../../model/Cadastro.model'
 import { Router } from '@angular/router'
  
