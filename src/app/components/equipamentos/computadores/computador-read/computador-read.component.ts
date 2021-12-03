@@ -1,3 +1,5 @@
+import { ComputadorService } from './../../../../services/computador.service';
+import { Computador } from './../../../../model/Computador.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComputadorReadComponent implements OnInit {
 
-  constructor() { }
+  computador!:Computador[];
+  displayedColumns = ['nome','ip','setor']
+
+  constructor(private comp:ComputadorService) { }
 
   ngOnInit(): void {
+    this.comp.read().subscribe(computador=>{
+      this.computador = computador;
+      console.log(computador)
+    }
+      )
+    }
+
   }
 
-}
+

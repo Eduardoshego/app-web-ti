@@ -1,3 +1,4 @@
+import { ComputadorReadComponent } from './components/equipamentos/computadores/computador-read/computador-read.component';
 import { EquipamentosCrudComponent } from './views/equipamentos-crud/equipamentos-crud.component';
 import { CadastroCreateComponent } from './components/cadastros/cadastro-create/cadastro-create';
 import { ProdutoDeleteComponent } from './components/produtos/produto-delete/produto-delete.component';
@@ -69,6 +70,10 @@ const routes: Routes = [
   //   path:"cadastro",
   //   component:CadastroCrudComponent
   // }
+  {
+    path:"computadores",
+    component:ComputadorReadComponent
+  }
 ];
 
 @NgModule({
