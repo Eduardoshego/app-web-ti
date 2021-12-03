@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Setor } from 'src/app/model/Setores.model';
+import { SetorService} from '../../../services/Setor.service'
 
 @Component({
   selector: 'app-setores-read',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetoresReadComponent implements OnInit {
 
-  constructor() { }
+  setores!: Setor[]
+  displayedColumns = ['setor','telefone','ramal','action']
 
-  ngOnInit(): void {
+  constructor(private setor:SetorService) { }
+
+  ngOnInit(  ): void {
+
+    this.setor.read().subscribe(
+      setores => {
+        this.setores = setores
+      }
+    )
+
   }
 
 }

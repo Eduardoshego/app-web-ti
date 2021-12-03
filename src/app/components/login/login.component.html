@@ -1,0 +1,27 @@
+<mat-card class="mat-card">
+  <mat-card-title>Login</mat-card-title>
+  <mat-divider></mat-divider>
+  <form>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Nome de usuário</mat-label>
+      <input matInput type="text" required [(ngModel)]="username" name="username">
+      <mat-icon matPrefix>account_circle</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Senha</mat-label>
+      <input matInput type="password" required [(ngModel)]="password" name="password">
+      <mat-icon matPrefix>lock</mat-icon>
+    </mat-form-field>
+</form>
+
+    <mat-divider></mat-divider>
+
+    <button class="button" mat-raised-button color="primary" (click)="logar()">Login</button>
+
+    <div>
+      <a  routerLink= "/cadastro/created">Não possui cadastro? Cadastre-se</a>
+    </div>
+ 
+</mat-card>

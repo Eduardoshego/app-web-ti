@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './components/templates/header/header.component';
@@ -32,10 +34,13 @@ import { MatMenuModule} from '@angular/material/menu'
 
 // Componentes da views
 import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
-import { ComputerCrudComponent } from './views/computer-crud/computer-crud.component';
+
 import { PrintsCrudComponent } from './views/prints-crud/prints-crud.component';
 import { SetoresCrudComponent } from './views/setores-crud/setores-crud.component';
 import { SwitchsCrudComponent } from './views/switchs-crud/switchs-crud.component';
+import {EquipamentosCrudComponent} from './views/equipamentos-crud/equipamentos-crud.component'
+
+
 
 // Componentes referente ao CRUD de Produtos.
 import { ProdutoCreateComponent} from './components/produtos/produto-create/produto-create.component';
@@ -57,6 +62,14 @@ import { CadastroReadComponent } from './components/cadastros/cadastro-read/cada
 
 import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
 import { SetoresReadComponent } from './components/setores/setores-read/setores-read.component';
+import { ProdutoSaidaCrudComponent } from './views/produto-saida-crud/produto-saida-crud.component';
+import { ProdutoSaidaReadComponent } from './components/produto-saida/produto-saida-read/produto-saida-read.component';
+import { LoginComponent } from './components/login/login.component';
+import { MonitorCrudComponent } from './views/monitor-crud/monitor-crud.component';
+import {ComputadorReadComponent} from './components/equipamentos/computadores/computador-read/computador-read.component'
+;
+
+
 
 
 
@@ -69,7 +82,6 @@ import { SetoresReadComponent } from './components/setores/setores-read/setores-
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ComputerCrudComponent,
     PrintsCrudComponent,
     SetoresCrudComponent,
     SwitchsCrudComponent,
@@ -83,6 +95,15 @@ import { SetoresReadComponent } from './components/setores/setores-read/setores-
     CadastroCrudComponent,
     CadastroReadComponent,
     CadastroCreateComponent,
+    ProdutoSaidaCrudComponent,
+    ProdutoSaidaReadComponent,
+    LoginComponent,
+    MonitorCrudComponent,
+    EquipamentosCrudComponent,
+    ComputadorReadComponent,
+    
+
+
     
     
 
@@ -108,7 +129,8 @@ import { SetoresReadComponent } from './components/setores/setores-read/setores-
     MatTreeModule,
     MatIconModule,
     MatTableModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule
     
   ],
   providers: [],

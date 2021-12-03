@@ -1,6 +1,6 @@
 export interface Setor{
     id?:number;
-    nome:string;
+    setorNome:string;
     telefone:string;
     ramal:string;
 

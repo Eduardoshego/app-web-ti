@@ -1,0 +1,10 @@
+mat-card{
+    display: flexbox;
+    width: 200px;
+    height: 200px;
+}
+button{
+    margin-top: 100%;
+    color: black;
+    position:relative;
+}
