@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl:"https://ti-suporte-front-end.herokuapp.com/api"
+  apiBaseUrl:"https://ti-suporte-backend.herokuapp.com//api"
 };

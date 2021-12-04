@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 })
 export class EstabilizadorService {
 
-   apiurl:string = environment.apiBaseUrl + "estabilizadores"
+   apiurl:string = environment.apiBaseUrl + "/estabilizadores"
 
   constructor(private http:HttpClient) { }
 
