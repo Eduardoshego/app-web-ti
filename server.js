@@ -7,7 +7,7 @@ const app = express();
 //nome da pasta dist que sera feita o build
 const appName = 'app-web-ti';
 //loca do build
-const outputPath = `${__dirname}/dist/appName`;
+const outputPath = `${__dirname}/dist/${appName}`;
 
 //seta o diretório de  build para servir o conteudo angular
 
