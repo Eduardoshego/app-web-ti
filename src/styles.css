@@ -40,17 +40,17 @@ table{
     margin-left: 10px;
 }
 
-.mat-card{
+/* .mat-card{
     margin: 2% 25% 0% 25%;
     border-radius: 10px;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 1%;
-    /* background-color: #a8a2a2; */
+    /* background-color: #a8a2a2; 
     
    
     
-}
+} */
 mat-card-title{
     text-align: center;
     

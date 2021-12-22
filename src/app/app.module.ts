@@ -54,6 +54,7 @@ import { CadastroCreateComponent } from './components/cadastros/cadastro-create/
 import { CadastroReadComponent } from './components/cadastros/cadastro-read/cadastro-read.component';
 
 
+import  { FlexLayoutModule } from '@angular/flex-layout'
 
 
 
@@ -130,7 +131,8 @@ import {ComputadorReadComponent} from './components/equipamentos/computadores/co
     MatIconModule,
     MatTableModule,
     MatMenuModule,
-    MatGridListModule
+    MatGridListModule,
+    FlexLayoutModule
     
   ],
   providers: [],
