@@ -25,13 +25,13 @@
           </ng-container>
 
       <!-- Action Colum -->
-        <ng-container matColumnDef="action">
+      <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef >Ações</th>
-          <td mat-cell *matCellDef="let prod" >
-            <a routerLink="/setores{{prod.id}}" class="edit">
+          <td mat-cell *matCellDef="let setor" >
+            <a routerLink="/setores{{setor.id}}" class="edit">
               <i class = "material-icons">edit</i>
             </a>
-            <a routerLink="{{prod.id}}" class="delete">
+            <a routerLink="{{setor.id}}" class="delete">
               <i class="material-icons">delete</i>
             </a>
             <a routerLink="" class="visu">

@@ -12,16 +12,16 @@ export class ComputadorReadComponent implements OnInit {
   computador!:Computador[];
   displayedColumns = ['nome','ip','setor']
 
-  constructor(private comp:ComputadorService) { }
+  constructor(private computadorService:ComputadorService) { }
 
   ngOnInit(): void {
-    this.comp.read().subscribe(computador=>{
+    this.computadorService.read().subscribe(computador=>{
       this.computador = computador;
       console.log(computador)
-    }
-      )
+      }
+        )
     }
 
-  }
+}
 
 

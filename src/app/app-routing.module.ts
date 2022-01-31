@@ -1,3 +1,5 @@
+import { EstabilizadorReadComponent } from './components/equipamentos/estabilizador/estabilizador-read/estabilizador-read.component';
+import { MonitorReadComponent } from './components/equipamentos/monitores/monitor-read/monitor-read.component';
 import { ComputadorReadComponent } from './components/equipamentos/computadores/computador-read/computador-read.component';
 import { EquipamentosCrudComponent } from './views/equipamentos-crud/equipamentos-crud.component';
 import { CadastroCreateComponent } from './components/cadastros/cadastro-create/cadastro-create';
@@ -26,7 +28,7 @@ const routes: Routes = [
     component:EquipamentosCrudComponent
   },
   {
-    path:"prints",
+    path:'prints',
     component:PrintsCrudComponent
   },
   {
@@ -73,6 +75,14 @@ const routes: Routes = [
   {
     path:"computadores",
     component:ComputadorReadComponent
+  },
+  {
+    path:"monitores",
+    component: MonitorReadComponent
+  },
+  {
+    path:"estabilizadores",
+    component:EstabilizadorReadComponent
   }
 ];
 

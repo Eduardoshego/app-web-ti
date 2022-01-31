@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Setor } from 'src/app/model/Setores.model';
 import { SetorService} from '../../../services/Setor.service'
 
+
 @Component({
   selector: 'app-setores-read',
   templateUrl: './setores-read.component.html',
