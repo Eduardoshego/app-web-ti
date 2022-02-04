@@ -2,17 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent} from './header/header.component';
-import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { AppRoutingModule } from '../../app-routing.module';
 import { MatListModule} from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    NavComponent,
     FooterComponent,
   ],
   imports: [
@@ -20,11 +21,14 @@ import { MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     AppRoutingModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    FormsModule,
+    MatButtonModule
   ],
   exports: [
     HeaderComponent,
-    NavComponent,
+    //NavComponent,
     FooterComponent
   ]
 

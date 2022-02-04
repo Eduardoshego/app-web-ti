@@ -1,3 +1,4 @@
+
 import { HeaderService } from './../../../services/header.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -22,5 +23,6 @@ export class HeaderComponent implements OnInit {
   get url(): string{
     return  this.headerService.headerData.url
   }
+  
 
 }
