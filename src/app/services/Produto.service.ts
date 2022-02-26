@@ -2,8 +2,9 @@ import { Produto } from '../model/Produto.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar} from '@angular/material/snack-bar';
-import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment' 
+import { Observable } from 'rxjs'
+import { environment } from '../../environments/environment'
+import { delay, first, tap} from 'rxjs/operators'
 
 @Injectable({
   providedIn: 'root'
@@ -25,12 +26,16 @@ export class ProdutoService {
     return this.http.post<Produto>(this.apiUrl, produto)
 
   }
-  read() :Observable<Produto[]>{
-    return this.http.get<Produto[]>(this.apiUrl) 
+  read() {
+    return this.http.get<Produto[]>(this.apiUrl).pipe(
+      first(),
+      
+    );
   }
   readById(id:string): Observable<Produto>{
     const url = `${this.apiUrl}/${id}`
     return this.http.get<Produto>(url)
+    
   }
   update(produto:Produto):Observable<Produto>{
     const url = `${this.apiUrl}/${produto.id}`

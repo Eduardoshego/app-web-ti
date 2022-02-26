@@ -1,8 +1,10 @@
-import { MatTableModule } from '@angular/material/table';
-import { ProdutoReadComponent } from './produto-read/produto-read.component';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {AppRoutingModule} from '../../app-routing.module'
+import { NgModule } from '@angular/core';
+import { AppMaterialModule } from 'src/app/shared/app-material/app-material.module';
+
+import { AppRoutingModule } from '../../app-routing.module';
+import { ProdutoReadComponent } from './produto-read/produto-read.component';
+
 
 
 
@@ -13,8 +15,8 @@ import {AppRoutingModule} from '../../app-routing.module'
   ],
   imports: [
     CommonModule,
-    MatTableModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppMaterialModule
   ],
   exports:[
     ProdutoReadComponent

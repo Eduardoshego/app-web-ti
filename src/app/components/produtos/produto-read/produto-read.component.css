@@ -13,3 +13,10 @@ table{
     color: #e35e6b;
     
 }
+.loading{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.15);
+}

@@ -1,6 +1,7 @@
 import { Produto } from '../../../model/Produto.model';
 import { ProdutoService } from '../../../services/Produto.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-produto-read',
@@ -9,16 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutoReadComponent implements OnInit {
 
-  produtos!: Produto[]
-  displayedColumns = ['id','descricao','quantidade','action']
+  produtos$: Observable<Produto[]>
+  displayedColumns = ['descricao','quantidade','action']
 
 
-  constructor(private produtoService : ProdutoService) { }
+  constructor(private produtoService : ProdutoService) { 
+
+    this.produtos$ = this.produtoService.read();
+  }
 
   ngOnInit(): void {
-    this.produtoService.read().subscribe(produtos => {
-      this.produtos = produtos
-    })
+    
   }
 
 
