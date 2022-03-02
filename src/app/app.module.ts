@@ -1,14 +1,37 @@
-import { ViewsModule } from './views/views.module';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { Component } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatTreeModule } from '@angular/material/tree';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { TemplatesModule } from './components/templates/templates.module'
-
+import { ProdutoSaidaCreateComponent } from './components/produto-saida/produto-saida-create/produto-saida-create.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatGridListModule } from '@angular/material/grid-list';
+import { CadastroCreateComponent } from './components/cadastros/cadastro-create/cadastro-create';
+import { ComputadorReadComponent } from './components/equipamentos/computadores/computador-read/computador-read.component';
+import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
+import { LoginComponent } from './components/login/login.component';
+
+import { ProdutoCreateComponent } from './components/produtos/produto-create/produto-create.component';
+import { ProdutoDeleteComponent } from './components/produtos/produto-delete/produto-delete.component';
+import { ProdutoUpdateComponent } from './components/produtos/produto-update/produto-update.component';
+import { TemplatesModule } from './components/templates/templates.module';
+import { ViewsModule } from './views/views.module';
+import {MatSelectModule} from '@angular/material/select';
+
+import {ProdutoSaidaModule} from '../app/components/produto-saida/produto-saida.module'
 
 
 
@@ -17,52 +40,22 @@ import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
-
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 
 // Componentes do Angular Material
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input'
-import { MatCardModule } from '@angular/material/card';
-
-import { MatButtonModule } from '@angular/material/button';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatListModule } from '@angular/material/list';
-import { MatTreeModule } from '@angular/material/tree';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTableModule } from '@angular/material/table';
-import { MatMenuModule } from '@angular/material/menu'
-
 // Componentes da views
 
 
 
 
 // Componentes referente ao CRUD de Produtos.
-import { ProdutoCreateComponent } from './components/produtos/produto-create/produto-create.component';
-import { ProdutoReadComponent } from './components/produtos/produto-read/produto-read.component';
-import { ProdutoUpdateComponent } from './components/produtos/produto-update/produto-update.component';
-import { ProdutoDeleteComponent } from './components/produtos/produto-delete/produto-delete.component';
-
 // Componentes referente ao CRUD de Pessoas
 
-import { CadastroCreateComponent } from './components/cadastros/cadastro-create/cadastro-create';
-import { CadastroReadComponent } from './components/cadastros/cadastro-read/cadastro-read.component';
-
-
-import { FlexLayoutModule } from '@angular/flex-layout'
 
 
 
 
 
 
-import { EstoqueCreatedComponent } from './components/estoque/estoque-created/estoque-created.component';
-import { ProdutoSaidaReadComponent } from './components/produto-saida/produto-saida-read/produto-saida-read.component';
-import { LoginComponent } from './components/login/login.component';
-import { ComputadorReadComponent } from './components/equipamentos/computadores/computador-read/computador-read.component'
-  ;
 
 
 
@@ -72,16 +65,16 @@ import { ComputadorReadComponent } from './components/equipamentos/computadores/
 
 @NgModule({
   declarations: [
-    AppComponent,   
+    AppComponent,
     EstoqueCreatedComponent,
     ProdutoCreateComponent,
     ProdutoUpdateComponent,
     ProdutoDeleteComponent,
     CadastroCreateComponent,
-    ProdutoSaidaReadComponent,
     LoginComponent,
     ComputadorReadComponent,
-
+    ProdutoSaidaCreateComponent
+    
 
 
 
@@ -113,6 +106,8 @@ import { ComputadorReadComponent } from './components/equipamentos/computadores/
     FlexLayoutModule,
     TemplatesModule,
     ViewsModule,
+    ProdutoSaidaModule,
+    MatSelectModule
 
 
   ],

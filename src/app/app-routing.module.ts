@@ -1,3 +1,5 @@
+import { ProdutoSaidaCreateComponent } from './components/produto-saida/produto-saida-create/produto-saida-create.component';
+import { ProdutoSaidaReadComponent } from './components/produto-saida/produto-saida-read/produto-saida-read.component';
 import { EstabilizadorReadComponent } from './components/equipamentos/estabilizador/estabilizador-read/estabilizador-read.component';
 import { MonitorReadComponent } from './components/equipamentos/monitores/monitor-read/monitor-read.component';
 import { ComputadorReadComponent } from './components/equipamentos/computadores/computador-read/computador-read.component';
@@ -67,6 +69,10 @@ const routes: Routes = [
     path:"produto/delete/:id",
     component:ProdutoDeleteComponent
 
+  },
+  {
+    path:"produto/saida/:id",
+    component:ProdutoSaidaCreateComponent
   },
   // {
   //   path:"cadastro",
