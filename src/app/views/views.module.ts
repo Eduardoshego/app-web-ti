@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { MonitorCrudComponent } from './monitor-crud/monitor-crud.component';
 import { PrintsCrudComponent } from './prints-crud/prints-crud.component';
 import { ProdutoCrudComponent } from './produto-crud/produto-crud.component';
-import { ProdutoSaidaCrudComponent } from './produto-saida-crud/produto-saida-crud.component';
 import { SetoresCrudComponent } from './setores-crud/setores-crud.component';
 import { SwitchsCrudComponent } from './switchs-crud/switchs-crud.component';
 
@@ -26,7 +25,6 @@ import { SwitchsCrudComponent } from './switchs-crud/switchs-crud.component';
     MonitorCrudComponent,
     PrintsCrudComponent,
     PrintsCrudComponent,
-    ProdutoSaidaCrudComponent,
     SetoresCrudComponent,
     SwitchsCrudComponent,
     ProdutoCrudComponent
@@ -45,7 +43,6 @@ import { SwitchsCrudComponent } from './switchs-crud/switchs-crud.component';
     MonitorCrudComponent,
     PrintsCrudComponent,
     PrintsCrudComponent,
-    ProdutoSaidaCrudComponent,
     SetoresCrudComponent,
     SwitchsCrudComponent,
     ProdutoCrudComponent,

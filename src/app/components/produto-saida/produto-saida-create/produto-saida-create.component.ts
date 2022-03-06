@@ -1,12 +1,12 @@
-import { SetorService } from './../../../services/Setor.service';
+import { SetorService } from '../../../services/Setor.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Produto } from 'src/app/model/Produto.model';
 import { Setor } from 'src/app/model/Setores.model';
 
-import { ProdutoService } from './../../../services/Produto.service';
+import { ProdutoService } from '../../../services/Produto.service';
 import { Observable } from 'rxjs';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-produto-saida-create',

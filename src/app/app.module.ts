@@ -16,7 +16,6 @@ import { MatTreeModule } from '@angular/material/tree';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ProdutoSaidaCreateComponent } from './components/produto-saida/produto-saida-create/produto-saida-create.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroCreateComponent } from './components/cadastros/cadastro-create/cadastro-create';
@@ -31,7 +30,7 @@ import { TemplatesModule } from './components/templates/templates.module';
 import { ViewsModule } from './views/views.module';
 import {MatSelectModule} from '@angular/material/select';
 
-import {ProdutoSaidaModule} from '../app/components/produto-saida/produto-saida.module'
+import {ProdutoSaidaModule} from './components/produto-saida/produto-saida.module'
 
 
 
@@ -73,7 +72,7 @@ import {ProdutoSaidaModule} from '../app/components/produto-saida/produto-saida.
     CadastroCreateComponent,
     LoginComponent,
     ComputadorReadComponent,
-    ProdutoSaidaCreateComponent
+  
     
 
 
