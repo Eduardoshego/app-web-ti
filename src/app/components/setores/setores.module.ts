@@ -1,9 +1,9 @@
+import { AppMaterialModule } from 'src/app/shared/app-material/app-material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SetoresReadComponent } from './setores-read/setores-read.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
@@ -14,10 +14,11 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    MatIconModule,
-    MatTableModule,
-    RouterModule
-    
+
+    RouterModule,
+    AppMaterialModule,
+    BrowserModule
+
   ],
   exports: [
     SetoresReadComponent

@@ -27,7 +27,7 @@ export class ProdutoReadComponent implements OnInit {
       catchError(error =>{
         this.onError('Erro ao carregar a lista de produtos!')
         return of ([])
-        console.log(error)
+        
       })
     )
   }

@@ -1,12 +1,12 @@
-import { SetorService } from '../../../services/Setor.service';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { Produto } from 'src/app/model/Produto.model';
 import { Setor } from 'src/app/model/Setores.model';
 
 import { ProdutoService } from '../../../services/Produto.service';
-import { Observable } from 'rxjs';
-import { FormControl, Validators} from '@angular/forms';
+import { SetorService } from '../../../services/Setor.service';
 
 @Component({
   selector: 'app-produto-saida-create',
@@ -16,16 +16,17 @@ import { FormControl, Validators} from '@angular/forms';
 export class ProdutoSaidaCreateComponent implements OnInit {
 
   produto!: Produto;
-  setores : Setor[] = [];
+  setores: Setor[] = []
   setorControl = new FormControl('', Validators.required);
 
   constructor(
     private produtoService : ProdutoService,
     private setorService :SetorService,
-     private route: ActivatedRoute,
-      private router: Router
-      ) { 
-        
+    private route: ActivatedRoute,
+    private router: Router
+    ) 
+    { 
+      
       }
 
   ngOnInit(): void {
@@ -37,8 +38,12 @@ export class ProdutoSaidaCreateComponent implements OnInit {
       }
     );
     this.setorService.read().subscribe(
-      response => this.setores = response
+      setores => {
+        this.setores = setores
+      }
     )
+   
+      
         
   }
   createdSaida(): void{

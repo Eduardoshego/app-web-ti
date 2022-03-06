@@ -1,3 +1,4 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     AppMaterialModule,
-    FormsModule
+    FormsModule,
+    BrowserModule
   ],
   exports: [
     ProdutoSaidaReadComponent
